@@ -1,0 +1,26 @@
+
+
+table{
+width:70rem;
+border-spacing : 30px 5px;
+}
+
+th{
+font-size:2rem;
+border:none;
+border-bottom:2px solid black;
+padding-bottom:20px;
+}
+
+td{
+border:none;
+border-bottom:1px solid gray;
+font-weight:bold;
+text-align:center;
+padding : 5px;
+}
+
+a{
+
+ font-size:20px;
+}

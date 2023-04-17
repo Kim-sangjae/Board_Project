@@ -1,0 +1,35 @@
+form{
+margin-left:43%;
+margin-top:10%;
+display:inline-block;
+border:1px solid black;
+border-radius:10px;
+text-align:center;
+padding:15px;
+}
+
+
+dd{
+text-align:center;
+display:block; margin: 0 auto;
+}
+dt{
+font-weight:bold;
+}
+
+input{
+min-width: 200px;
+}
+
+textarea{
+min-height: 150px;
+min-width: 200px;
+}
+
+button{
+font-size:15px
+
+}
+
+
+

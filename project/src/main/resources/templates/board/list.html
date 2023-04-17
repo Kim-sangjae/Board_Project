@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/list.css}">
+
+    <title>게시판목록</title>
+</head>
+
+<body>
+<table border="1">
+    <th>번호</th>
+    <th>제목</th>
+    <th>작성자</th>
+    <th>게시일자</th>
+
+    <tbody>
+    <tr th:each="list : ${list}">
+        <td th:text="${list.Id}">1</td>
+        <td>
+            <a th:text="${list.subject}" th:href="@{/board/list/{id}(id=${list.Id})}">제목</a>
+        </td>
+
+        <td>사용자1</td>
+        <td th:text="${#temporals.format(list.regDt, 'yyyy/MM/dd || HH:mm')}">2023-04-15</td>
+    </tr>
+    </tbody>
+</table>
+
+<a th:href="@{/board}">홈으로</a>
+
+</body>
+
+
+
+
+</html>

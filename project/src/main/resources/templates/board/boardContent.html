@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<link rel="stylesheet" type="text/css" th:href="@{/css/content.css}">
+<body>
+<div>
+    <h2 th:text="${listId.Id}"></h2>
+    <h1>게시글제목</h1>
+    <p class="sub" th:text="${listId.subject}">제모고오옥</p>
+</div>
+
+<div>
+    <h1>내용</h1>
+    <p class="content" th:text="${listId.content}">내요요용</p>
+</div>
+
+<div>
+    <a th:href="@{/board/write}">글쓰기</a>
+    <a th:href="@{/board/list}">목록</a>
+    <a th:href="@{/board/delete/{id}(id=${listId.Id})}">글삭제</a>
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
